@@ -1,0 +1,46 @@
+.customButton {
+  width: fit-content;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  background-color: #ff67b4;
+  color: white;
+  border-radius: 10px;
+}
+
+.prevIcon,
+.nextIcon {
+  width: 20px;
+  height: 20px;
+  color: white;
+}
+
+@media (max-width: 900px) {
+  .prevIcon,
+  .nextIcon {
+    width: 18px;
+    height: 18px;
+  }
+
+  .customButton {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 600px) {
+  .prevIcon,
+  .nextIcon {
+    width: 16px;
+    height: 16px;
+  }
+
+  .customButton {
+    font-size: 14px;
+  }
+}

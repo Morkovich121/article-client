@@ -1,0 +1,185 @@
+/* Reset and global styles */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li,
+a {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  color: #084b83;
+  margin: 0;
+}
+
+.header {
+  background-color: #084b83;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 65px;
+  color: white;
+}
+
+.header h1 {
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.header p {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.main-container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 2rem 1rem;
+  background: #ffffff;
+  border-radius: 12px;
+}
+
+footer {
+  background-color: #084b83;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 1rem;
+  border-radius: 0 0 12px 12px;
+}
+
+a {
+  text-decoration: none;
+  color: #084b83;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #05609a;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.not-found-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  padding: 20px;
+  background: linear-gradient(135deg, #f4f9fd, #d6e9fc);
+  color: #084b83;
+}
+
+.not-found-title {
+  font-size: 8rem;
+  font-weight: bold;
+  margin: 0;
+  color: #084b83;
+  text-shadow: 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.not-found-subtitle {
+  font-size: 2.2rem;
+  color: #05609a;
+}
+
+.not-found-description {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+.not-found-button {
+  display: inline-block;
+  background-color: #084b83;
+  color: white;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.not-found-button:hover {
+  background-color: #05609a;
+  transform: scale(1.05);
+}
+
+@media screen and (max-width: 900px) {
+  .header {
+    padding-left: 50px;
+  }
+
+  .header h1 {
+    font-size: 28px;
+  }
+
+  .header p {
+    font-size: 15px;
+  }
+
+  .not-found-title {
+    font-size: 6rem;
+  }
+
+  .not-found-subtitle {
+    font-size: 1.8rem;
+  }
+
+  .not-found-description {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    padding: 0 35px;
+  }
+
+  .header h1 {
+    font-size: 24px;
+  }
+
+  .header p {
+    font-size: 14px;
+  }
+
+  .not-found-title {
+    font-size: 6rem;
+  }
+
+  .not-found-subtitle {
+    font-size: 1.8rem;
+  }
+
+  .not-found-description {
+    font-size: 1rem;
+  }
+}

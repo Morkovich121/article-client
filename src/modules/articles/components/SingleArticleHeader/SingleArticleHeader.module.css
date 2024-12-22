@@ -1,0 +1,51 @@
+.articleHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  padding: 45px;
+  border-radius: 20px;
+  border: 2px solid #42bfdd;
+  margin-bottom: 15px;
+}
+
+.articleHeader h2 {
+  font-size: 32px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.articleHeader span {
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .articleHeader {
+    padding: 40px 30px;
+  }
+
+  .articleHeader h2 {
+    font-size: 28px;
+  }
+
+  .articleHeader span {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .articleHeader {
+    padding: 40px 20px;
+  }
+
+  .articleHeader h2 {
+    font-size: 24px;
+  }
+
+  .articleHeader span {
+    font-size: 16px;
+  }
+}

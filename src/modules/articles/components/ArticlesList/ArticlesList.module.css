@@ -1,0 +1,8 @@
+.articleList {
+  display: grid;
+  width: 100%;
+  gap: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  justify-content: start;
+  padding: 20px;
+}
