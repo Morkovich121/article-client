@@ -1,13 +1,33 @@
-//api
-import { fetchArticles } from "@/modules/articles/api/articles.api";
+"use client";
+
+import { useEffect, useState } from "react";
 //components
 import ArticleList from "@/modules/articles/components/ArticlesList/ArticlesList";
+import Image from "next/image";
 //styles
 import styles from "./page.module.css";
-import Image from "next/image";
+//types
+import { ArticleType } from "@/modules/articles/types/articles.type";
+//api
+import { fetchArticles } from "@/modules/articles/api/articles.api";
 
-export default async function HomePage() {
-  const articles = await fetchArticles();
+export default function HomePage() {
+  const [articles, setArticles] = useState<ArticleType[]>([]);
+
+  useEffect(() => {
+    const fetch = async () => {
+      try {
+        const articles = await fetchArticles();
+
+        setArticles(articles);
+      } catch (error) {
+        console.error("Failed to fetch articles:", error);
+      } finally {
+      }
+    };
+
+    fetch();
+  }, []);
 
   return (
     <div className={styles.homeContainer}>
